@@ -9,7 +9,7 @@ public class Movies
     public int MovieId { get; set; }
     public required string MovieName { get; set; }
     public required string Description { get; set; }
-
+    public required string MovieImageUrl { get; set; }
     public required string Language { get; set; }
     public required string Cast { get; set; }
     public required string Director { get; set; }

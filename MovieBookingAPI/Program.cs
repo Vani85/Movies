@@ -1,4 +1,5 @@
 using MovieBookingAPI.Database;
+using MovieBookingAPI.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +26,8 @@ builder.Services.AddCors(options =>
 builder.Services.AddDbContext<MovieBookingDbContext>();
 builder.Services.AddAuthorization();
 
+builder.Services.AddControllers();
+builder.Services.AddTransient<IMoviesRepository, MoviesRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
