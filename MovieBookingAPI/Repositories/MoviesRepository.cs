@@ -1,4 +1,3 @@
-using Microsoft.EntityFrameworkCore;
 using MovieBookingAPI.Database;
 using MovieBookingAPI.Models.DatabaseModels;
 namespace MovieBookingAPI.Repositories;
@@ -18,6 +17,6 @@ public class MoviesRepository : IMoviesRepository
 
     public IEnumerable<Movies> GetNowShowingMovies()
     {
-        return _context.Movies.Where(movie => movie.isNowShowing == true);            
+        return _context.Movies.Where(movie => movie.IsNowShowing == true);            
     }
 }

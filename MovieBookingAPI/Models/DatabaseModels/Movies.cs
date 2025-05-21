@@ -14,8 +14,7 @@ public class Movies
     public required string Cast { get; set; }
     public required string Director { get; set; }
     public required DateOnly ReleaseDate { get; set; }
-
     public required int DurationInMins { get; set; }
-    public required bool isNowShowing { get; set; }
+    public required bool IsNowShowing { get; set; }
     
 }

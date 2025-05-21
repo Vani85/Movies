@@ -1,8 +1,3 @@
-using System.Security;
-using System.Security.Claims;
-using System.Text.Json.Serialization;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using MovieBookingAPI.Models.DatabaseModels;
 using MovieBookingAPI.Repositories;

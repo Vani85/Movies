@@ -28,6 +28,11 @@ builder.Services.AddAuthorization();
 
 builder.Services.AddControllers();
 builder.Services.AddTransient<IMoviesRepository, MoviesRepository>();
+builder.Services.AddTransient<ITheatreRepository, TheatreRepository>();
+
+builder.Services.AddTransient<ITheatreSeatsRepository, TheatreSeatsRepository>();
+builder.Services.AddTransient<IShowRepository, ShowRepository>();
+builder.Services.AddTransient<IBookingRepository, BookingRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -16,4 +16,8 @@ public class MovieBookingDbContext : DbContext
     }
 
     public DbSet<Movies> Movies { get; set; }
+    public DbSet<Theatre> Theatre { get; set; }
+    public DbSet<TheatreSeats> TheatreSeats { get; set; }
+    public DbSet<Show> Show { get; set; }    
+    public DbSet<Booking> Booking { get; set; }
 }
